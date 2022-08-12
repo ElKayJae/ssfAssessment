@@ -13,19 +13,25 @@
         <button type="submit" >Save</button>
         <div th:each="article:*{fullList}" display="flex">
             <div th:object="${article}">
-                <h4>Id: </h4>
-                <p th:text=*{id}></p>
+                <p><b>Id:</b>
+                <span th:text=*{id}></span>
+                </p>
                 <image th:src=*{imageurl}></image>
-                <h4 th:text=*{title}></h4>
+                <h3 th:text=*{title}></h3>
                 <body th:text=*{body}></body>
-                <h4>Categories: </h4>
-                <p th:text=*{categories}></p>
-                <h4>Tag: </h4>
-                <p th:text=*{tags}></p>
-                <h4>Published: </h4>
-                <p th:text=*{published_on}></p>
+                <p> <b>Categories:</b>
+                <span th:text=*{categories}></span>
+                </p>
+                <p><b>Tag: </b>
+                <span th:text=*{tags}></span>
+                </p>
+                <p><b>Published: </b>
+                <span th:text=*{published_on}></span>
+                </p>
                 <a th:href=*{url}>Link</a>
                 <input type="checkbox" th:checked="*{save}" value="Save">
+                <br>
+                <br>
                 <br>
             </div>
         </div>

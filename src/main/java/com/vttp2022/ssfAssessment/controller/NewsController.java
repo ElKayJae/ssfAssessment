@@ -45,6 +45,7 @@ public class NewsController {
         List<Article> savedList = new ArrayList<>();
         for (Article item: articleList.getFullList()){
             logger.info("running");
+            //if save== true,
             if (item.getSave()){
                 savedList.add(item);
             }
