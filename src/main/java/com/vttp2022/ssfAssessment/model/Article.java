@@ -8,11 +8,11 @@ import jakarta.json.JsonObject;
 public class Article {
 
     private String id;
-    private String published_on;
     private String title;
+    private String body;
+    private String published_on;
     private String url;
     private String imageurl;
-    private String body;
     private String tags;
     private String categories;
     private Boolean save=false;
